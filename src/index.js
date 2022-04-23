@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import {
   BrowserRouter
@@ -14,7 +14,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <AuthContextProvider>
-      <App />
+        <App />
+        
     </AuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>
