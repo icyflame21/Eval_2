@@ -12,12 +12,12 @@ export const UserDetails = () => {
     User Details
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">{userDetails1[0]}</li>
-    <li class="list-group-item">{ userDetails1[1]}</li>
-    <li class="list-group-item">{ userDetails1[2]}</li>
-    <li class="list-group-item">{ userDetails2[0]}</li>
-    <li class="list-group-item">{ userDetails2[1]}</li>
-    <li class="list-group-item">{ userDetails2[2]}</li>
+    <li class="list-group-item">Name: &nbsp; {userDetails1[0]}</li>
+    <li class="list-group-item">Age: &nbsp; {userDetails1[1]}</li>
+    <li class="list-group-item">DoB: &nbsp; {userDetails1[2]}</li>
+    <li class="list-group-item">State: &nbsp; {userDetails2[0]}</li>
+    <li class="list-group-item">Address: &nbsp; { userDetails2[1]}</li>
+    <li class="list-group-item">PIN: &nbsp; {userDetails2[2]}</li>
   </ul>
 </div>
     </>);
