@@ -14,12 +14,6 @@ import {
   Contact
 } from './pages/One';
 import {
-  Users
-} from './pages/Users';
-import {
-  Login
-} from './pages/Login';
-import {
   Home
 } from './pages/Home';
 import {
@@ -32,11 +26,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/registration/two" element={<AboutUs />}/>
         <Route path="/registration/one" element={<Contact />}/>
-        <Route path="/users" element={<Users />}/>
-        <Route path="/login" element={<Login />}/>
-        <Route path="/users/:userId" element={<UserDetails />}/>
+        <Route path="/registration/two" element={<AboutUs />}/>
+        <Route path="/users/details" element={<UserDetails />}/>
       </Routes>
     </div>
   );

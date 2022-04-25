@@ -1,25 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import {
-    useParams
-} from 'react-router-dom';
+import './UserDetails.css'
 
 export const UserDetails = () => {
-    const {
-        userId
-    } = useParams();
-    const [userState, setUserState] = useState({});
-    // {
-    //     userId: '7'
-    // }
-    console.log(userId);
-    useEffect(() => {
-        fetch(`https://reqres.in/api/users/${userId}`)
-        .then((response) => response.json())
-        .then(data => setUserState(data.data));
-    }, []);
+    const userDetails1 = JSON.parse(localStorage.getItem('details1'))
+    const userDetails2 =JSON.parse(localStorage.getItem('details2'));
     return (
-    <div>
-       <div>{userState.email}</div>
-       <div>{userId}</div>
-    </div>);
+        <>
+    <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    User Details
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+    </>);
 }
