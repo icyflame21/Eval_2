@@ -1,7 +1,13 @@
 import React from 'react';
+import {
+    Link
+} from 'react-router-dom';
 
 export const Home = () => {
-    return (<div>
-        <h1>I'm in Home page</h1>
-    </div>);
+    return (
+        <>
+        <h2>This is Home page</h2>
+            <Link to='/registration/one'><button style={{ marginTop: "10px" }} type="button" class="btn btn-info">Go To Form Page</button></Link>
+    </>
+    );
 }

@@ -4,9 +4,7 @@ import {
 } from '../contexts/AuthContext';
 
 export const Login = () => {
-    const {
-        login,
-    } = useContext(AuthContext);
+    const {login} = useContext(AuthContext);
 
     const [userDetails, setUserDetails] = useState({
         email: '',

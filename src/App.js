@@ -9,10 +9,10 @@ import {
 } from './components/NavBar';
 import {
   AboutUs
-} from './pages/About';
+} from './pages/Two';
 import {
   Contact
-} from './pages/Contact';
+} from './pages/One';
 import {
   Users
 } from './pages/Users';
@@ -32,8 +32,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/about-us" element={<AboutUs />}/>
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/registration/two" element={<AboutUs />}/>
+        <Route path="/registration/one" element={<Contact />}/>
         <Route path="/users" element={<Users />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/users/:userId" element={<UserDetails />}/>

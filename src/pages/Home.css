@@ -1,0 +1,11 @@
+.form_1{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 2%;
+    border: 1px solid gainsboro;
+    padding: 2% 2.9%;
+    border-radius: 10px;
+}
+button{
+    padding: 5px 20px !important;
+}
